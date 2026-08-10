@@ -27,6 +27,10 @@ let package = Package(
                 .product(name: "Witnesses", package: "swift-witnesses"),
             ]
         ),
+        .testTarget(
+            name: "Witness Context Tests",
+            dependencies: ["WitnessContext"]
+        ),
     ],
     swiftLanguageModes: [.v6]
 )
