@@ -10,6 +10,6 @@ struct `Witness Context Tests` {
 extension `Witness Context Tests`.Unit {
   @Test
   func `reexports Witnesses`() {
-    #expect(String(reflecting: Witness.self) == "Witness_Primitives.Witness")
+    #expect(String(reflecting: Witness.self) == "Witness.Witness")
   }
 }
