@@ -15,16 +15,16 @@ let package = Package(
         .library(
             name: "Witness Context",
             targets: ["WitnessContext"]
-        ),
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-compositions/swift-witnesses.git", branch: "main"),
+        .package(url: "https://github.com/swift-compositions/swift-witnesses.git", branch: "main")
     ],
     targets: [
         .target(
             name: "WitnessContext",
             dependencies: [
-                .product(name: "Witnesses", package: "swift-witnesses"),
+                .product(name: "Witnesses", package: "swift-witnesses")
             ]
         ),
         .testTarget(
